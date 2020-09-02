@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Simple Mobile Apps/Web</title>
+</head>
+<body>
+<h1></h1>
+body {
+    background-color: lightblue;
+  }
+<p align="center">Mobile Apps</p>
+<p align="center"><input type="text" id="output" name="output"></p>
+<button id = "tombol_reserve">Reverse</button>
+<button id = "tombol_undo/redo">undo/redo</button>
+
+<script>
+    document.getElementById("tombol_reverse").
+    addEventListener("click", f_reverse);
+ 
+    document.getElementById("tombol_form").
+    addEventListener("click", f_undo);
+
+    function f_reverse(str){
+        var splitString = str.split('').innerHTML;
+        var reverseArray = splitString.reverse().innerHTML;
+        var joinArray = reverseArray.join('').innerHTML;
+        return joinArray.innerHTML;
+    }
+    reverseString(tombol_reserve).innerHTML
+</script>
+</body>
+</html> 
